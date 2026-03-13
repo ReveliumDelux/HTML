@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Página 1 — Inicio</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f5f5f5;
+}
+
+/* HEADER Y MENU */
+
+.site-header{
+background:#ff6a00;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 30px;
+color:white;
+}
+
+.brand{
+font-size:22px;
+font-weight:bold;
+}
+
+.main-nav a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+font-weight:bold;
+}
+
+.main-nav a:hover{
+text-decoration:underline;
+}
+
+/* BUSCADOR */
+
+.search-form input{
+padding:8px;
+border-radius:5px;
+border:none;
+}
+
+/* CONTENEDOR */
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+/* PRODUCTOS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.product{
+background:white;
+border-radius:10px;
+padding:15px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.product img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:5px;
+}
+
+.price{
+color:#ff6a00;
+font-size:20px;
+font-weight:bold;
+}
+
+button{
+background:#ff6a00;
+border:none;
+color:white;
+padding:10px 15px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#e55c00;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+margin-top:40px;
+background:#222;
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+<link rel="stylesheet" href="styles.css">
+<header class="site-header">
+
+<div class="brand">Inicio </div>
+
+<nav class="main-nav">
+<a href="Principios.html">Panel Principal</a>
+<a href="pagina1.html">Inicio</a>
+<a href="pagina2.html">Catalogo</a>
+<a href="pagina3.html">Compra</a>
+<a href="pagina4.html">Contacto</a>
+</nav>
+
+<form class="search-form">
+<input type="search" placeholder="Buscar productos...">
+</form>
+
+</header>
+</head>
+
+</form>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Pañoletas Artesanales</h1>
+      <p>Pañoletas hechas a mano con diseños únicos. Calidad, estilo y tradición en cada pieza.</p>
+      <p><a class="btn" href="pagina2.html">Ver Catalogo</a></p>
+    </section>
+
+    <!-- GRID DE CARDS -->
+    <section class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/800x320?text=Pa%C3%B1oletas+Artesanales" alt="Pañoletas">
+        <h2>Nuestra historia</h2>
+        <p>Comenzamos creando pañoletas por amor al diseño; cada pieza es cuidada y seleccionada para ofrecer variedad y durabilidad.</p>
+      </div>
+      <div class="card">
+        <h2>Calidad y materiales</h2>
+        <p>Usamos seda, algodón y tejidos naturales seleccionados para cada diseño.</p>
+      </div>
+    </section>
+
+
+    <!-- MAPA Y DIRECCIÓN -->
+    <section style="margin-top:25px;">
+      <h2>Dirección y Ubicación</h2>
+      <p>Ciudad del Saber, Inadeh.</p>
+      <iframe class="map-embed" src="https://www.google.com/maps?q=Ciudad+del+Saber+Panama&output=embed" loading="lazy"></iframe>
+    </section>
+
+    <p style="margin-top:12px;"><a href="pagina1.html">← Volver a Inicio</a></p>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Pañoletas
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- Inicio de la estructura -->
+
+<html lang="es">
+
+<head> <!-- Configuración de la página -->
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="refresh" content="15">
+<link rel="stylesheet" href="styles.css">
+<title>Panel Principal</title>
+<style>
+
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f5f5f5;
+color:#333;
+}
+
+/* HEADER */
+
+.site-header{
+background:#ff6a00;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 30px;
+color:white;
+}
+
+.brand{
+font-size:22px;
+font-weight:bold;
+}
+
+/* MENU */
+
+.main-nav a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+font-weight:bold;
+}
+
+.main-nav a:hover{
+text-decoration:underline;
+}
+
+/* BUSCADOR */
+
+.search-form input{
+padding:8px;
+border-radius:5px;
+border:none;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css">
+
+</head> <!-- Fin configuración -->
+
+<body> <!-- Contenido visible -->
+
+<header class="site-header">
+
+<div class="brand">Pañoletas — Inicio</div>
+
+<nav class="main-nav">
+<a href="Principios.html">Panel Principal</a>
+<a href="pagina1.html">Inicio</a>
+<a href="pagina2.html">Catalogo</a>
+<a href="pagina3.html">Compra</a>
+<a href="pagina4.html">Contacto</a>
+</nav>
+
+<form class="search-form" action="#" role="search">
+<input type="search" placeholder="Buscar pañoletas..." aria-label="Buscar">
+<button type="submit" title="Buscar">🔍</button>
+</form>
+
+</header>
+
+<main class="container">
+
+<section class="hero">
+
+<h1>Este es el Encabezado</h1>
+<p>Este es un Párrafo.</p>
+
+</section>
+
+</main>
+
+<footer>
+© 2026 Pañoletas — Todos los derechos reservados
+</footer>
+
+</body>
+
+</html>

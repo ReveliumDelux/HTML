@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<title>Página 3 — Compra</title>
+
+<style>
+
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f5f5f5;
+color:#333;
+}
+
+/* HEADER */
+
+.site-header{
+background:#ff6a00;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 30px;
+color:white;
+}
+
+.brand{
+font-size:22px;
+font-weight:bold;
+}
+
+/* MENU */
+
+.main-nav a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+font-weight:bold;
+}
+
+.main-nav a:hover{
+text-decoration:underline;
+}
+
+/* BUSCADOR */
+
+.search-form input{
+padding:8px;
+border-radius:5px;
+border:none;
+}
+
+/* CONTENEDOR */
+
+.container{
+width:90%;
+max-width:1000px;
+margin:auto;
+margin-top:30px;
+}
+
+/* HERO */
+
+.hero{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+margin-bottom:20px;
+}
+
+/* FORMULARIO */
+
+form{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+max-width:520px;
+}
+
+label{
+display:block;
+margin-top:10px;
+font-weight:bold;
+}
+
+input, select, textarea{
+width:100%;
+padding:8px;
+margin-top:5px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.btn{
+display:inline-block;
+background:#ff6a00;
+color:white;
+padding:10px 15px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.btn:hover{
+background:#e55c00;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+margin-top:40px;
+background:#222;
+color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+<link rel="stylesheet" href="styles.css">
+<header class="site-header">
+
+<div class="brand">Compra</div>
+
+<nav class="main-nav">
+<a href="Principios.html">Panel Principal</a>
+<a href="pagina1.html">Inicio</a>
+<a href="pagina2.html">Catalogo</a>
+<a href="pagina3.html">Compra</a>
+<a href="pagina4.html">Contacto</a>
+</nav>
+
+<form class="search-form">
+<input type="search" placeholder="Buscar pañoletas...">
+</form>
+
+</header>
+
+<main class="container">
+
+<section class="hero">
+<h1>Realizar Compra</h1>
+<p>Selecciona el producto y completa el formulario para realizar tu pedido.</p>
+</section>
+
+<form action="#" method="post">
+
+<label>Producto</label>
+<select name="producto">
+<option>Pañoleta Seda — Floral</option>
+<option>Pañoleta Algodón — Casual</option>
+<option>Personalización (encargo)</option>
+</select>
+
+<label>Cantidad</label>
+<input type="number" name="cantidad" value="1" min="1">
+
+<label>Nombre</label>
+<input type="text" name="nombre" required>
+
+<label>Correo electrónico</label>
+<input type="email" name="email" required>
+
+<label>Dirección de envío</label>
+<textarea name="direccion" rows="3"></textarea>
+
+<button type="submit" class="btn">Enviar pedido</button>
+
+</form>
+
+<br>
+
+<a href="pagina2.html">← Volver a Catalogo</a><br>
+<a style="margin-top:12px;"><a href="pagina1.html">← Volver a Inicio</a></a>
+
+
+</main>
+
+<footer>
+© 2026 Pañoletas.PA
+</footer>
+
+</body>
+</html>
