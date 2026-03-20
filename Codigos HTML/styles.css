@@ -1,0 +1,196 @@
+/* VARIABLES */
+:root {
+  --bg: #f5f5f5;
+  --primary: #ff6a00;
+  --primary-dark: #e55c00;
+  --accent: #ff6a00;
+  --muted: #333;
+  --white: #fff;
+  --shadow: 0 0 10px rgba(0,0,0,0.1);
+  --border: 1px solid #ccc;
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--muted);
+}
+
+/* HEADER */
+header.site-header {
+  background: var(--primary);
+  padding: 15px 30px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+header .brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* NAV */
+nav.main-nav a {
+  color: var(--white);
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* BUSCADOR */
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-form input {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* CONTENEDOR */
+.container {
+  max-width: 980px;
+  margin: 18px auto;
+  padding: 0 16px;
+}
+
+/* HERO */
+.hero {
+  background: var(--white);
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+/* GRID PRODUCTOS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* TARJETAS */
+.card {
+  background: var(--white);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* BOTONES */
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--white);
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  padding: 14px;
+  text-align: center;
+  background: #222;
+  color: var(--white);
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* MAPA */
+.map-embed {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* DETALLE PRODUCTO */
+.product-detail {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.product-images {
+  flex: 1;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.thumbs {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumbs img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.option {
+  margin-top: 15px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: var(--border);
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.description ul {
+  padding-left: 20px;
+}
+
+/* PAGINACIÓN */
+.page-link {
+  background-color: #595a5c;
+  color: #000000;
+}
+
